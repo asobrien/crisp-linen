@@ -21,10 +21,10 @@ So, you want to contribute and make this thing betterer. Go ahead!
 
 Here are the steps you should follow:
 
-1) Fork the [Crisp-Linen repository](https://github.com/asobrien/crisp-linen) (here are some [instructions on forking](https://help.github.com/articles/fork-a-repo)).
-2) Create a new [working branch](https://help.github.com/articles/fork-a-repo#create-branches) for your changes.
-3) Commit yer changes.
-4) Submit a pull request (here are some [instructions on pull requests](https://help.github.com/articles/using-pull-requests)).
+  1. [Fork](https://github.com/asobrien/crisp-linen/fork) the [Crisp-Linen repository](https://github.com/asobrien/crisp-linen) (here are some [instructions on forking](https://help.github.com/articles/fork-a-repo)).
+  2. Create a new [working branch](https://help.github.com/articles/fork-a-repo#create-branches) for your changes.
+  3. Commit yer changes.
+  4. Submit a pull request (here are some [instructions on pull requests](https://help.github.com/articles/using-pull-requests)).
 
 
 
