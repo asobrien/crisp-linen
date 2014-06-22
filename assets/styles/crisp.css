@@ -1,91 +1,84 @@
 * {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 } 
 /* Basic Typography */
 html, body {
-	font-size: 1em;
-	line-height: 1.65em;
-	font-family: "Open Sans", sans-serif;
-	font-weight: 300;
-	color:#444;
-	background: #fff;
-	height: 100%; /* sf */
+    font-size: 1em;
+    line-height: 1.65em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    color:#444;
+    background: #fff;
+    height: 100%; /* sf */
 }
 
 /* Overflows must be explicitly set for Safari/iOS. Don't alienate Steve. */
 
 html {
-	height: 100%;
-	/*overflow-y: auto;*/
+    height: 100%;
+    /*overflow-y: auto;*/
 }
 body {
-	padding: 2em 2.5em 1em 20em;
-	/*z-index: 100;*/
-	/*overflow: hidden;*/
-}                  
-
+    padding: 2em 2.5em 1em 20em;
+    /*z-index: 100;*/
+    /*overflow: hidden;*/
+}
 
 
 /* Blocks */
 header {
-	border-right: 1px #eee solid;
-	padding: 2em;
-	position:fixed;
-	top: 0;
-	left: 0;
-	height:100%;
-	width:13.5em;
-	background: inherit;
-	/* overflow-y: auto; */  /* set sidebar overflow property */
+    border-right: 1px #eee solid;
+    padding: 2em;
+    position:fixed;
+    top: 0;
+    left: 0;
+    height:100%;
+    width:13.5em;
+    background: inherit;
 }
 
 /* sf */
 main {
-	    min-height: 100%;
+    min-height: 100%;
     height: auto !important;
     height: 100%;
     margin: 0 auto calc(-2em - 33px); /* the bottom margin is the negative value of the footer's height */
 }
 
 #content {
-	display: block;
-	width: 100%;
+    display: block;
+    width: 100%;
 
 }
 footer {
-	/*position: relative;*/
-    /*min-height: 59px;   keep heigh consistent across responses */
-	padding: 1em 0em 2em 0em;
-	font-size:0.8em;
-	line-height: 1.5em;
-	color: #888;
-	z-index: 2;
-	background: inherit;
-	border-top: 0.1em #eee solid;
-	/*position: relative;*/
-
+    padding: 1em 0em 2em 0em;
+    font-size:0.8em;
+    line-height: 1.5em;
+    color: #888;
+    z-index: 2;
+    background: inherit;
+    border-top: 0.1em #eee solid;
 }
-
 
 article {
-	border-bottom: none;
-	padding-bottom: 1.7em;
+    border-bottom: none;
+    padding-bottom: 1.7em;
 }
 p, hr, h4, h5, h6 {
-	margin-top: 0.9em;
-	margin-bottom: 0.9em;
+    margin-top: 0.9em;
+    margin-bottom: 0.9em;
 }
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Bree Serif", serif;
-	font-weight: 400 !important;
+    font-family: "Bree Serif", serif;
+    font-weight: 400 !important;
 }
 h1 {
-	font-size: 2.5em;
-	line-height: 1.1em;
-	margin-top: 0.6em;
-	margin-bottom: 0.6em;
+    font-size: 2.5em;
+    line-height: 1.1em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
 }
 
 .post-content h1 {
@@ -93,34 +86,34 @@ font-size: 2.2em;
 }
 
 h2 {
-	font-size:1.9em;
-	line-height: 1.2em;
-	margin-top: 0.7em;
-	margin-bottom: 0.7em;	
+    font-size:1.9em;
+    line-height: 1.2em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;   
 }
 h3 {
-	font-size:1.4em;
-	line-height: 1.3em;
-	margin-top: 0.8em;
-	margin-bottom: 0.8em;	
+    font-size:1.4em;
+    line-height: 1.3em;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;   
 }
 h4 {
-	font-size:1.3em;
+    font-size:1.3em;
 }
 h5 {
-	font-size:1.2em;
+    font-size:1.2em;
 }
 h6 {
-	font-size:1.1em;
+    font-size:1.1em;
 }
 /* Page Elements */
 img, iframe {
-	max-width: 100%;
+    max-width: 100%;
 }
 a {
-	font-weight:700;
-	text-decoration:none;
-	color: #358aca; /* Change Link Color */
+    font-weight:700;
+    text-decoration:none;
+    color: #358aca; /* Change Link Color */
     
 }
 
@@ -129,66 +122,57 @@ a {
 }
 
 a:hover, a:visited:hover {
-	text-decoration:none;
+    text-decoration:none;
     color: #555;
     transition: 0.5s;
 }
-
-
 
 .post-content a:hover{
     border-bottom: 1px #ccc dotted;
 }
 
-
-
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	font-weight:400 !important;
+    font-weight:400 !important;
 }
 strong {
-	font-weight: 700;
+    font-weight: 700;
 }
 blockquote {
-	border-left: 0.4em solid #eee;
-	padding-left: 1.2em;
-	font-size: 1.3em;
+    border-left: 0.4em solid #eee;
+    padding-left: 1.2em;
+    font-size: 1.3em;
 }
 hr{
- 	border: 0;
-	height: 1px;
-	background: #eee;
-}
-ul, ol {
-	margin-left: 3em; 
+    border: 0;
+    height: 1px;
+    background: #eee;
 }
 
+ul, ol {
+    margin-left: 3em; 
+}
 
 code {
-	font-size:1.2em;
-	background: #f6f9ff;
-	border-radius: 0.15em;
-	-moz-border-radius: 0.15em;
-	-webkit-border-radius: 0.15em;
-	border: none;
-
-	white-space: pre-wrap;
-	white-space: -moz-pre-wrap;
-	white-space: -pre-wrap;
-	white-space: -o-pre-wrap;
-	word-wrap: break-word;
+    font-size:1.2em;
+    background: #f6f9ff;
+    border-radius: 0.15em;
+    -moz-border-radius: 0.15em;
+    -webkit-border-radius: 0.15em;
+    border: none;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 
 pre {
     width: 98%; margin-left: auto; margin-right: auto;
-	font-size: 0.9em;
-	line-height: 1.5em;
-	background: none;
-	padding: 0;
-
-
-	
+    font-size: 0.9em;
+    line-height: 1.5em;
+    background: none;
+    padding: 0;
 }
-
 
 pre code {
 
@@ -204,46 +188,55 @@ border: 1px #e4e8ee solid;
 }
 
 input {
-	font-size:1em;
-	padding: 0.3em;
+    font-size:1em;
+    padding: 0.3em;
 }
+
+
 /* Sidebar */
 header h1 {
-	font-size:1.9em;
-	margin-top:0.8em;
-	margin-bottom:0.6em;
+    font-size:1.9em;
+    margin-top:0.8em;
+    margin-bottom:0.6em;
 }
+
 header h1 a {
-	color:#444;
-}  
+    color:#444;
+}
+
 header h1 a:hover {
-	text-decoration:none;
+    text-decoration:none;
 }
+
 header #logo img {
-	width:10em;
-	height:10em;
-	border-radius:4.5em;
-	-moz-border-radius: 4.5em;
-	-webkit-border-radius: 4.5em;
-	border: none;
+    width:10em;
+    height:10em;
+    border-radius:4.5em;
+    -moz-border-radius: 4.5em;
+    -webkit-border-radius: 4.5em;
+    border: none;
 }
+
 #follow-icons {
-	font-size: 0.7em;
-	margin-top: -0.7em;
-	margin-bottom: 1.5em;
+    font-size: 0.7em;
+    margin-top: -0.7em;
+    margin-bottom: 1.5em;
     word-spacing: 0.2em;
 }
+
 #follow-icons a {
-	color: #ccc;
-}	
-#follow-icons span {
-	vertical-align:top;
-	margin-left:-0.15em;
-	margin-right:-0.15em;
+    color: #ccc;
 }
+
+#follow-icons span {
+    vertical-align:top;
+    margin-left:-0.15em;
+    margin-right:-0.15em;
+}
+
 #follow-icons span .fa-stack-1x {
-	font-size:1.05em;
-	line-height:1.9em;
+    font-size:1.05em;
+    line-height:1.9em;
 }
 
 #follow-icons span .fa-stack-1p5x {
@@ -252,19 +245,10 @@ header #logo img {
 }
 
 
-
-/*.fa {
-    width: 0.85em;
-    height: 0;
-}*/
-
 /* The RSS icon, inserted via icon font */
-
 .fa-back {
     color: #D2DEE3;
 }
-
-
 
 .fa-trans:before {
     color: #D2DEE3;
@@ -279,116 +263,126 @@ header #logo img {
 }
 
 header h6 {
-	margin-top:0.5em;
+    margin-top:0.5em;
 }
+
+
 /* Posts */
 article span.post-stamp {
-	color:#888;     
+    color:#888;
 }
+
 h1.post-title {
-	margin-top:0.35em;
-	margin-bottom: 0.6em;
+    margin-top:0.35em;
+    margin-bottom: 0.6em;
 }
+
 h3.post-title {
-	margin-top:0.4em;
-	padding-bottom:0.9em;
-	border-bottom: 1px solid #eee;
-	font-size: 1.2em;
-	color: #444;
+    margin-top:0.4em;
+    padding-bottom:0.9em;
+    border-bottom: 1px solid #eee;
+    font-size: 1.2em;
+    color: #444;
 }
+
 .post-title .feature-star {
-	font-size: 0.9em;
+    font-size: 0.9em;
 }
+
 .separator, .taglist, .feature-star {
-	color: #ccc;
+    color: #ccc;
 }
+
 .taglist a {
-	/*background-color:#ccc;*/
     background-color: #D2DEE3;
-	color:#fff;
-	padding:0.3em 0.6em 0.3em 0.6em;
-	vertical-align:10%;  
-	font-size:0.5em;
-	font-family: "Open Sans", sans-serif;
-	font-weight: 700 !important;
-	text-transform:uppercase;
-	letter-spacing:0.05em;
-	border-radius:0.25em;
-	-moz-border-radius: 0.25em;
-	-webkit-border-radius: 0.25em;
+    color:#fff;
+    padding:0.3em 0.6em 0.3em 0.6em;
+    vertical-align:10%;  
+    font-size:0.5em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700 !important;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    border-radius:0.25em;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
     text-decoration: none;
     transition: 0.75s ease;
-
 }
 
 .taglist a:hover {
-    /* background-color: #238a7a; */ /* tag color on hover */
     background-color: #50585D;
     transition: 0.75s ease;
     color: #fff;
-     /*transition: color 0.5s ease;*/
 }
 
 #social-bar {
-	margin-top:1.5em;
-	background-color:#eee;
-	padding:0.5em;
+    margin-top:1.5em;
+    background-color:#eee;
+    padding:0.5em;
 }
+
 #comments {
-	margin-top: 0.15em;
+    margin-top: 0.15em;
     padding: 1.5em;
-	padding-bottom: 0.2em;
-	/*border-bottom: 1px solid #eee;*/
+    padding-bottom: 0.2em;
     background: #fbfcff;
 }
+
+
 /* Footer */
 .pagination {
-	margin-bottom:1em;
+    margin-bottom:1em;
 }
+
 footer a {
-	font-weight:300;
-	color:#888;
-	text-decoration: underline;
-} 
-footer a:hover {
-	color:#444;
-	text-decoration: none;
+    font-weight:300;
+    color:#888;
+    text-decoration: underline;
 }
+
+footer a:hover {
+    color:#444;
+    text-decoration: none;
+}
+
+
 /* Large Screens */
 @media only screen and (min-width: 1281px) {
-	html, body {
-		font-size: 1.1em;
-	} 
-
+    html, body {
+        font-size: 1.1em;
+    }
 }
+
+
 /* Small Screens */
-@media only screen and (max-width: 800px) { 
-	body {
-		padding:0;
-	}
+@media only screen and (max-width: 800px) {
+    body {
+        padding:0;
+    }
 
-	header {
-		border-right: none;
-		border-bottom: 1px #eee solid;
-		position:relative;
-		height:auto;
-		width:auto;
-		text-align:center;
-		padding-bottom:1em;
-	}
+    header {
+        border-right: none;
+        border-bottom: 1px #eee solid;
+        position:relative;
+        height:auto;
+        width:auto;
+        text-align:center;
+        padding-bottom:1em;
+    }
 
-	#content {
-		margin-left: 0;
-		padding: 2em 2em 1em 2em;
-		width: auto;
-	}
+    #content {
+        margin-left: 0;
+        padding: 2em 2em 1em 2em;
+        width: auto;
+    }
 
-	footer {
-		padding: 0.75em 2.5em 2em 2.5em;
-	}
+    footer {
+        padding: 0.75em 2.5em 2em 2.5em;
+    }
 
-	    #content .full-img {
-	    position: center;
+        #content .full-img {
+        position: center;
         width: auto;
         width: calc(100% + 4em); /* expand with to image + margins */
         margin: 0 -2em; /* get rid of margins */
@@ -399,94 +393,51 @@ footer a:hover {
 
     #subscribe .icon-rss:before {
         content: "\e901";
-}
+    }
 
     /* The subscribe icon on the footer */
-#subscribe {
-   /* width: 28px;
-    height: 28px;
+    #subscribe {
     position: absolute;
-    top: -14px;
-    left: 50%;
-    margin-left: -15px;
-    border: #EBF2F6 1px solid;
-    text-align: center;
-    line-height: 2.4rem;
-    border-radius: 50px;
-    background: #fff;
-    transition: box-shadow 0.5s;*/
-
-
-/*right:-10px;*/
-
-/*bottom: 0px;*/
-/*top: -5px;*/
-
-position: absolute;
-/*left: 100;*/
-/*top: 10;*/
-width: 100%;
-/*margin-right: -2.5em;*/
-/*right: -2.5em;*/
-/*margin-left: 2.5em;*/
-text-align: right;
-vertical-align: center;
-
-background: none;
-/*position: relative;*/
-/*vertical-align: bottom;*/
-/*top: 0px;*/
-
-/*              -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);*/
-
+    width: 100%;
+    text-align: right;
+    vertical-align: center;
+    background: none;
+    }
 }
 
 
-
-
-/* The RSS icon, inserted via icon font */
-
-
-}
 /* Tiny Screens */
 @media only screen and (max-width: 320px) { 
-	header {
-		padding: 1.2em 1.2em 0.6em 1.2em;
-	}
-	#content {
-		padding: 1.2em 1.2em 0.6em 1.2em;
-	}
-	footer {
-		padding: 0 1.5em 1.2em 1.5em;
-        /*padding: 1em 0em 2em 0em;*/
-	}
-	ul, ol {
-		margin-left: 2em; 
-	}
+    header {
+        padding: 1.2em 1.2em 0.6em 1.2em;
+    }
+
+    #content {
+        padding: 1.2em 1.2em 0.6em 1.2em;
+    }
+
+    footer {
+        padding: 0 1.5em 1.2em 1.5em;
+    }
+
+    ul, ol {
+        margin-left: 2em; 
+    }
 }
+
 
 /* Custom styling */
 article.post h1, h2 {
-/*border-bottom: url('./images/border.png');*/
-/*font-variant: small-caps;*/
 background: url('./images/border_2px.png') bottom repeat-x;
 background-position: bottom;
 background-size: auto 0.06em;
-
 padding-bottom: 0.16em;
-/*border-bottom: 3px #eee solid;*/
 }
-
-
 
 /* leave the titles alone */
 article.post h1.post-title {
-	background: none;
-	padding-bottom: inherit;
+    background: none;
+    padding-bottom: inherit;
 }
 
 /* Don't wrap code */
@@ -498,7 +449,7 @@ article.post h1.post-title {
 
 /* Keep images centred and within the bounds of the post-width */
 .post-content img {
-	position: center;
+    position: center;
     display: block;
     max-width: 100%;
     height: auto;
@@ -521,6 +472,7 @@ article.post h1.post-title {
         min-width: 0;
         max-width: 112%; /* fallback when calc doesn't work */
     }
+
 
 /* ICONOGRAPHY */
 /* Import the font file with the icons in it */
@@ -594,8 +546,9 @@ article.post h1.post-title {
 .icon-stackoverflow,
 .icon-pocket,
 .icon-tumblr a {
-	text-decoration: none;
+    text-decoration: none;
 }
+
 
 /* Each icon is created by inserting the corret character into the
    content of the :before pseudo element. Like a boss. */
@@ -621,53 +574,20 @@ article.post h1.post-title {
     display: none;
 }
 
-.circleBase {
-    
-    /* I don't care about IE8 */
-}
-
 .rss-semi-circle {
-	border-radius: 50%;
+    border-radius: 50%;
     width: 50px;
     height: 50px;
     background: #fefefe;
     border: 1px #eee solid;
-    /*overflow: hidden;*/
-    /*margin-left: 0;*/
 }
 
 .lr-semi-circ {
-	text-align: center;
-	/*padding-top: 0px;*/
-    /*margin-bottom: 0px; */  /* body[1] +  footer[2.5] */
-    /*margin-left: -65px;*/
-    /*height: 50px;*/
-      /*display: block;*/
-  /*margin-right: auto;*/
-/*top: 10px;*/
-  /*overflow: hidden;*/
-
-  position: absolute;
-  /*position:relative;*/
-  /*z-index: 0;*/
-
-  /*bottom:0px;*/
-  /*left:-65px;*/
-  /*margin-left: -63px;*/
-  /*bottom: -60px;*/
-  
-  /*margin-top: 15px;*/
-  /*overflow: hidden;*/
-
-  margin-left:calc(-2em - 22px);
-  /*margin-left: auto;*/
-  /*margin-right: 0;*/
-  top:-22px;
-
-
-  /*margin-bottom: calc(-25px);*/
-
-      -webkit-transform: rotate(90deg);
+    text-align: center;
+    position: absolute;
+    margin-left:calc(-2em - 22px);
+    top:-22px;
+    -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -675,21 +595,10 @@ article.post h1.post-title {
 }
 
 .lr-logo {
-
    position: absolute;
-   /* 1em - 0.25em */
-
    /* note that these are rotated 90 degrees relative to their labels. */
    top: 3px;
    margin-left: 0px;
-   /*overflow: hidden;*/
-   /*left: 5px;*/
-   /*padding-left: -3px;*/
-   /*padding-bottom: 15px;*/
-   /*margin-bottom: 0.25em;*/
-
-
-
 }
 
 .footer, .push {
@@ -697,40 +606,10 @@ article.post h1.post-title {
     clear: both;
 }
 
-/*#foot .rss-semi-circle {
-	overflow: hidden;
-}*/
-
-/* SUBSCRIBE TOOLTIP */
-
-
-
-/* Can we alter gists? */
-/*.gist-file{
-        font-size: 0.9em;
-    line-height: 1.7em;
-
-}*/
-
-/* --------------------------------------------------------------------- */
-
-
 /* Hover tooltip from Casper */
 
 /* The subscribe icon on the footer */
 .subscribe {
-    /*width: 28px;*/
-    /*height: 28px;*/
-    /*position: absolute;*/
-    /*top: -14px;*/
-    /*left: 50%;*/
-    /*margin-left: -15px;*/
-    /*border: #EBF2F6 1px solid;*/
-    /*text-align: center;*/
-    /*line-height: 2.4rem;*/
-    /*border-radius: 50px;*/
-    /*background: #fff;*/
-    /*transition: box-shadow 0.5s;*/
     width: 0.85em;
     height: 0;
 }
@@ -738,11 +617,6 @@ article.post h1.post-title {
 /* The RSS icon, inserted via icon font */
 .subscribe:before {
     color: #D2DEE3;
-    /*font-size: 10px;*/
-    /*position: absolute;*/
-    /*top: 9px;*/
-    /*left: 9px;*/
-    /*font-weight: bold;*/
     transition: color 0.5s ease;
 }
 
@@ -767,7 +641,6 @@ article.post h1.post-title {
     color: rgba(255,255,255,0.9);
     font-size: 1.1rem;
     line-height: 1em;
-    /*text-align: center;*/
     background: #50585D;
     border-radius:20px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
@@ -796,7 +669,6 @@ article.post h1.post-title {
     transition: opacity 0.3s ease, bottom 0.3s ease;
 }
 
-
 .tooltip2 {
     opacity:1;
     display: inline-block;
@@ -807,7 +679,6 @@ article.post h1.post-title {
     color: rgba(255,255,255,0.9);
     font-size: 1.1rem;
     line-height: 1em;
-    /*text-align: center;*/
     background: #50585D;
     border-radius:20px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
@@ -822,15 +693,9 @@ article.post h1.post-title {
 
 
 /* Better styles for embedding GitHub Gists */
-
-
 .gist{font-size: 0.9em;line-height: 1.5em;margin-bottom:20px;width:98%; margin-left: auto; margin-right: auto !important}
 .gist-data{background-color: #f6f9ff !important}
 .gist pre{font-family:monospace,Menlo,Monaco,'Bitstream Vera Sans Mono','Courier New' !important; }
 .gist-meta{font-family:Helvetica,Arial,sans-serif;font-size:0.75em !important}
 .gist-meta a{text-decoration:none; border: none}
 .gist-meta a:hover{text-decoration:none; border: none}
-
-
-
-
