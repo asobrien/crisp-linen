@@ -6,7 +6,7 @@ A clean, responsive theme for Ghost forked from Crisp.
 
 CREDITS
 -------
-Many thanks to @kathyqian for the core theme upon which this work is derived.
+Many thanks to [@kathyqian](https://github.com/kathyqian) for the [core theme](https://github.com/kathyqian/crisp-ghost-theme) upon which this work is derived.
 
 Some functionality in the theme is ported directly from the [Casper theme](https://github.com/TryGhost/Casper) by the [Ghost Foundation](https://ghost.org/); released under the [MIT license](http://opensource.org/licenses/MIT).
 
