@@ -6,7 +6,7 @@ A clean, responsive theme for Ghost forked from Crisp.
 
 LICENSE
 -------
-*Crisp-Linen* is derived from [*Crisp*](https://github.com/kathyqian/crisp-ghost-theme) by [Kathy Qian](http://kathyqian.com/). The code is released under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license. Feel free to modify, rehash, derive or distribute the code so long as you keep the [attribution chain intact](http://wiki.creativecommons.org/FAQ#How_do_I_properly_attribute_a_Creative_Commons_licensed_work.3F) and you don't sell the work. 
+*Crisp-Linen* is derived from [*Crisp*](https://github.com/kathyqian/crisp-ghost-theme) by [Kathy Qian](http://kathyqian.com/). The code is released under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license](http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). Feel free to modify, rehash, derive or distribute the code so long as you keep the [attribution chain intact](http://wiki.creativecommons.org/FAQ#How_do_I_properly_attribute_a_Creative_Commons_licensed_work.3F) and you don't sell the work. 
 
 The explicit CC BY-NC-SA 4.0 License for this work is shown below:
 
