@@ -1,0 +1,836 @@
+* {
+	padding: 0;
+	margin: 0;
+} 
+/* Basic Typography */
+html, body {
+	font-size: 1em;
+	line-height: 1.65em;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color:#444;
+	background: #fff;
+	height: 100%; /* sf */
+}
+
+/* Overflows must be explicitly set for Safari/iOS. Don't alienate Steve. */
+
+html {
+	height: 100%;
+	/*overflow-y: auto;*/
+}
+body {
+	padding: 2em 2.5em 1em 20em;
+	/*z-index: 100;*/
+	/*overflow: hidden;*/
+}                  
+
+
+
+/* Blocks */
+header {
+	border-right: 1px #eee solid;
+	padding: 2em;
+	position:fixed;
+	top: 0;
+	left: 0;
+	height:100%;
+	width:13.5em;
+	background: inherit;
+	/* overflow-y: auto; */  /* set sidebar overflow property */
+}
+
+/* sf */
+main {
+	    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto calc(-2em - 33px); /* the bottom margin is the negative value of the footer's height */
+}
+
+#content {
+	display: block;
+	width: 100%;
+
+}
+footer {
+	/*position: relative;*/
+    /*min-height: 59px;   keep heigh consistent across responses */
+	padding: 1em 0em 2em 0em;
+	font-size:0.8em;
+	line-height: 1.5em;
+	color: #888;
+	z-index: 2;
+	background: inherit;
+	border-top: 0.1em #eee solid;
+	/*position: relative;*/
+
+}
+
+
+article {
+	border-bottom: none;
+	padding-bottom: 1.7em;
+}
+p, hr, h4, h5, h6 {
+	margin-top: 0.9em;
+	margin-bottom: 0.9em;
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Bree Serif", serif;
+	font-weight: 400 !important;
+}
+h1 {
+	font-size: 2.5em;
+	line-height: 1.1em;
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+}
+
+.post-content h1 {
+font-size: 2.2em;
+}
+
+h2 {
+	font-size:1.9em;
+	line-height: 1.2em;
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;	
+}
+h3 {
+	font-size:1.4em;
+	line-height: 1.3em;
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;	
+}
+h4 {
+	font-size:1.3em;
+}
+h5 {
+	font-size:1.2em;
+}
+h6 {
+	font-size:1.1em;
+}
+/* Page Elements */
+img, iframe {
+	max-width: 100%;
+}
+a {
+	font-weight:700;
+	text-decoration:none;
+	color: #358aca; /* Change Link Color */
+    
+}
+
+.post-content a:visited{
+    color: #71a8d5;
+}
+
+a:hover, a:visited:hover {
+	text-decoration:none;
+    color: #555;
+    transition: 0.5s;
+}
+
+
+
+.post-content a:hover{
+    border-bottom: 1px #ccc dotted;
+}
+
+
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	font-weight:400 !important;
+}
+strong {
+	font-weight: 700;
+}
+blockquote {
+	border-left: 0.4em solid #eee;
+	padding-left: 1.2em;
+	font-size: 1.3em;
+}
+hr{
+ 	border: 0;
+	height: 1px;
+	background: #eee;
+}
+ul, ol {
+	margin-left: 3em; 
+}
+
+
+code {
+	font-size:1.2em;
+	background: #f6f9ff;
+	border-radius: 0.15em;
+	-moz-border-radius: 0.15em;
+	-webkit-border-radius: 0.15em;
+	border: none;
+
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+
+pre {
+    width: 98%; margin-left: auto; margin-right: auto;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	background: none;
+	padding: 0;
+
+
+	
+}
+
+
+pre code {
+
+        border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+border: 1px #e4e8ee solid;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+}
+
+input {
+	font-size:1em;
+	padding: 0.3em;
+}
+/* Sidebar */
+header h1 {
+	font-size:1.9em;
+	margin-top:0.8em;
+	margin-bottom:0.6em;
+}
+header h1 a {
+	color:#444;
+}  
+header h1 a:hover {
+	text-decoration:none;
+}
+header #logo img {
+	width:10em;
+	height:10em;
+	border-radius:4.5em;
+	-moz-border-radius: 4.5em;
+	-webkit-border-radius: 4.5em;
+	border: none;
+}
+#follow-icons {
+	font-size: 0.7em;
+	margin-top: -0.7em;
+	margin-bottom: 1.5em;
+    word-spacing: 0.2em;
+}
+#follow-icons a {
+	color: #ccc;
+}	
+#follow-icons span {
+	vertical-align:top;
+	margin-left:-0.15em;
+	margin-right:-0.15em;
+}
+#follow-icons span .fa-stack-1x {
+	font-size:1.05em;
+	line-height:1.9em;
+}
+
+#follow-icons span .fa-stack-1p5x {
+    font-size:1.45em;
+    line-height:1.9em;
+}
+
+
+
+/*.fa {
+    width: 0.85em;
+    height: 0;
+}*/
+
+/* The RSS icon, inserted via icon font */
+
+.fa-back {
+    color: #D2DEE3;
+}
+
+
+
+.fa-trans:before {
+    color: #D2DEE3;
+    transition: color 0.5s ease;
+}
+
+.fa-trans:hover:before {
+    color: #50585D;
+}
+
+.fa-none:before, .fa-none:hover:before {
+}
+
+header h6 {
+	margin-top:0.5em;
+}
+/* Posts */
+article span.post-stamp {
+	color:#888;     
+}
+h1.post-title {
+	margin-top:0.35em;
+	margin-bottom: 0.6em;
+}
+h3.post-title {
+	margin-top:0.4em;
+	padding-bottom:0.9em;
+	border-bottom: 1px solid #eee;
+	font-size: 1.2em;
+	color: #444;
+}
+.post-title .feature-star {
+	font-size: 0.9em;
+}
+.separator, .taglist, .feature-star {
+	color: #ccc;
+}
+.taglist a {
+	/*background-color:#ccc;*/
+    background-color: #D2DEE3;
+	color:#fff;
+	padding:0.3em 0.6em 0.3em 0.6em;
+	vertical-align:10%;  
+	font-size:0.5em;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700 !important;
+	text-transform:uppercase;
+	letter-spacing:0.05em;
+	border-radius:0.25em;
+	-moz-border-radius: 0.25em;
+	-webkit-border-radius: 0.25em;
+    text-decoration: none;
+    transition: 0.75s ease;
+
+}
+
+.taglist a:hover {
+    /* background-color: #238a7a; */ /* tag color on hover */
+    background-color: #50585D;
+    transition: 0.75s ease;
+    color: #fff;
+     /*transition: color 0.5s ease;*/
+}
+
+#social-bar {
+	margin-top:1.5em;
+	background-color:#eee;
+	padding:0.5em;
+}
+#comments {
+	margin-top: 0.15em;
+    padding: 1.5em;
+	padding-bottom: 0.2em;
+	/*border-bottom: 1px solid #eee;*/
+    background: #fbfcff;
+}
+/* Footer */
+.pagination {
+	margin-bottom:1em;
+}
+footer a {
+	font-weight:300;
+	color:#888;
+	text-decoration: underline;
+} 
+footer a:hover {
+	color:#444;
+	text-decoration: none;
+}
+/* Large Screens */
+@media only screen and (min-width: 1281px) {
+	html, body {
+		font-size: 1.1em;
+	} 
+
+}
+/* Small Screens */
+@media only screen and (max-width: 800px) { 
+	body {
+		padding:0;
+	}
+
+	header {
+		border-right: none;
+		border-bottom: 1px #eee solid;
+		position:relative;
+		height:auto;
+		width:auto;
+		text-align:center;
+		padding-bottom:1em;
+	}
+
+	#content {
+		margin-left: 0;
+		padding: 2em 2em 1em 2em;
+		width: auto;
+	}
+
+	footer {
+		padding: 0.75em 2.5em 2em 2.5em;
+	}
+
+	    #content .full-img {
+	    position: center;
+        width: auto;
+        width: calc(100% + 4em); /* expand with to image + margins */
+        margin: 0 -2em; /* get rid of margins */
+        min-width: 0;
+        max-width: 120%; /* fallback when calc doesn't work */
+        overflow: hidden;
+    }
+
+    #subscribe .icon-rss:before {
+        content: "\e901";
+}
+
+    /* The subscribe icon on the footer */
+#subscribe {
+   /* width: 28px;
+    height: 28px;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    margin-left: -15px;
+    border: #EBF2F6 1px solid;
+    text-align: center;
+    line-height: 2.4rem;
+    border-radius: 50px;
+    background: #fff;
+    transition: box-shadow 0.5s;*/
+
+
+/*right:-10px;*/
+
+/*bottom: 0px;*/
+/*top: -5px;*/
+
+position: absolute;
+/*left: 100;*/
+/*top: 10;*/
+width: 100%;
+/*margin-right: -2.5em;*/
+/*right: -2.5em;*/
+/*margin-left: 2.5em;*/
+text-align: right;
+vertical-align: center;
+
+background: none;
+/*position: relative;*/
+/*vertical-align: bottom;*/
+/*top: 0px;*/
+
+/*              -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);*/
+
+}
+
+
+
+
+/* The RSS icon, inserted via icon font */
+
+
+}
+/* Tiny Screens */
+@media only screen and (max-width: 320px) { 
+	header {
+		padding: 1.2em 1.2em 0.6em 1.2em;
+	}
+	#content {
+		padding: 1.2em 1.2em 0.6em 1.2em;
+	}
+	footer {
+		padding: 0 1.5em 1.2em 1.5em;
+        /*padding: 1em 0em 2em 0em;*/
+	}
+	ul, ol {
+		margin-left: 2em; 
+	}
+}
+
+/* Custom styling */
+article.post h1, h2 {
+/*border-bottom: url('./images/border.png');*/
+/*font-variant: small-caps;*/
+background: url('./images/border_2px.png') bottom repeat-x;
+background-position: bottom;
+background-size: auto 0.06em;
+
+padding-bottom: 0.16em;
+/*border-bottom: 3px #eee solid;*/
+}
+
+
+
+/* leave the titles alone */
+article.post h1.post-title {
+	background: none;
+	padding-bottom: inherit;
+}
+
+/* Don't wrap code */
+#content pre code{
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
+}
+
+/* Keep images centred and within the bounds of the post-width */
+.post-content img {
+	position: center;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0.6em 0;
+}
+
+/* Break out larger images to be wider than the main text column
+   the class is applied with jQuery */
+.post-content .full-img {
+    width: 125%;
+    max-width: none;
+    margin: 0 -13%;
+}
+
+.post-content .full-img {
+        width: auto;
+        width: calc(100% + 2em); /* expand with to image + margins */
+        margin: 0 -16px; /* get rid of margins */
+        min-width: 0;
+        max-width: 112%; /* fallback when calc doesn't work */
+    }
+
+/* ICONOGRAPHY */
+/* Import the font file with the icons in it */
+@font-face {
+    font-family: 'icons-casper';
+    src:url('../fonts/casper.eot');
+    src:url('../fonts/casper.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/casper.ttf') format('truetype'),
+        url('../fonts/casper.svg#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icons-zocial';
+    src:url('../fonts/zocial.eot');
+    src:url('../fonts/zocial.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/zocial.ttf') format('truetype'),
+        url('../fonts/zocial.svg#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply these base styles to all icons */
+.icon-ghost:before,
+.icon-feed:before,
+.icon-twitter:before,
+.icon-google-plus:before,
+.icon-facebook:before {
+    font-family: 'icons-casper';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shirt:before,
+.icon-rss:before,
+.icon-twitter:before,
+.icon-gplus:before,
+.icon-facebook:before,
+.icon-github-circled:before,
+.icon-stackoverflow:before,
+.icon-pocket:before,
+.icon-tumblr:before {
+    font-family: 'icons-zocial';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* no underlines */
+.icon-ghost,
+.icon-shirt,
+.icon-rss,
+.icon-twitter,
+.icon-gplus,
+.icon-facebook,
+.icon-github-circled,
+.icon-stackoverflow,
+.icon-pocket,
+.icon-tumblr a {
+	text-decoration: none;
+}
+
+/* Each icon is created by inserting the corret character into the
+   content of the :before pseudo element. Like a boss. */
+.icon-ghost:before {
+    content: "\e000";
+}
+
+.icon-shirt:before {
+    content: "\e100";
+    font-size: 1.25em;
+}
+
+.icon-rss:before {
+    content: "\e801";
+
+}
+
+
+/* Hides shit */
+.hidden {
+    text-indent: -9999px;
+    visibility: hidden;
+    display: none;
+}
+
+.circleBase {
+    
+    /* I don't care about IE8 */
+}
+
+.rss-semi-circle {
+	border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #fefefe;
+    border: 1px #eee solid;
+    /*overflow: hidden;*/
+    /*margin-left: 0;*/
+}
+
+.lr-semi-circ {
+	text-align: center;
+	/*padding-top: 0px;*/
+    /*margin-bottom: 0px; */  /* body[1] +  footer[2.5] */
+    /*margin-left: -65px;*/
+    /*height: 50px;*/
+      /*display: block;*/
+  /*margin-right: auto;*/
+/*top: 10px;*/
+  /*overflow: hidden;*/
+
+  position: absolute;
+  /*position:relative;*/
+  /*z-index: 0;*/
+
+  /*bottom:0px;*/
+  /*left:-65px;*/
+  /*margin-left: -63px;*/
+  /*bottom: -60px;*/
+  
+  /*margin-top: 15px;*/
+  /*overflow: hidden;*/
+
+  margin-left:calc(-2em - 22px);
+  /*margin-left: auto;*/
+  /*margin-right: 0;*/
+  top:-22px;
+
+
+  /*margin-bottom: calc(-25px);*/
+
+      -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.lr-logo {
+
+   position: absolute;
+   /* 1em - 0.25em */
+
+   /* note that these are rotated 90 degrees relative to their labels. */
+   top: 3px;
+   margin-left: 0px;
+   /*overflow: hidden;*/
+   /*left: 5px;*/
+   /*padding-left: -3px;*/
+   /*padding-bottom: 15px;*/
+   /*margin-bottom: 0.25em;*/
+
+
+
+}
+
+.footer, .push {
+    height: calc(2em + 33px); /* .push must be the same height as .footer */
+    clear: both;
+}
+
+/*#foot .rss-semi-circle {
+	overflow: hidden;
+}*/
+
+/* SUBSCRIBE TOOLTIP */
+
+
+
+/* Can we alter gists? */
+/*.gist-file{
+        font-size: 0.9em;
+    line-height: 1.7em;
+
+}*/
+
+/* --------------------------------------------------------------------- */
+
+
+/* Hover tooltip from Casper */
+
+/* The subscribe icon on the footer */
+.subscribe {
+    /*width: 28px;*/
+    /*height: 28px;*/
+    /*position: absolute;*/
+    /*top: -14px;*/
+    /*left: 50%;*/
+    /*margin-left: -15px;*/
+    /*border: #EBF2F6 1px solid;*/
+    /*text-align: center;*/
+    /*line-height: 2.4rem;*/
+    /*border-radius: 50px;*/
+    /*background: #fff;*/
+    /*transition: box-shadow 0.5s;*/
+    width: 0.85em;
+    height: 0;
+}
+
+/* The RSS icon, inserted via icon font */
+.subscribe:before {
+    color: #D2DEE3;
+    /*font-size: 10px;*/
+    /*position: absolute;*/
+    /*top: 9px;*/
+    /*left: 9px;*/
+    /*font-weight: bold;*/
+    transition: color 0.5s ease;
+}
+
+/* Add a box shadow to on hover */
+.subscribe:hover {
+    /*box-shadow: rgba(0,0,0,0.05) 0 0 0 3px;*/
+    /*transition: box-shadow 0.25s;*/
+}
+
+.subscribe:hover:before {
+    color: #50585D;
+}
+
+/* CSS tooltip saying "Subscribe!" - initially hidden */
+.tooltip {
+    opacity:0;
+    display: inline-block;
+    padding: 4px 8px 5px 8px;
+    position:relative;
+    top: -23px;
+    left: -27px;
+    color: rgba(255,255,255,0.9);
+    font-size: 1.1rem;
+    line-height: 1em;
+    /*text-align: center;*/
+    background: #50585D;
+    border-radius:20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+/* The little chiclet arrow under the tooltip, pointing down */
+.tooltip:after {
+    content:"";
+    border-width:5px 5px 0 5px;
+    border-style:solid;
+    border-color: #50585D transparent;
+    display:block;
+    position:absolute;
+    bottom:-4px;
+    left:50%;
+    margin-left:-5px;
+    z-index: 220;
+    width:0;
+}
+
+/* On hover, show the tooltip! */
+.subscribe:hover .tooltip {
+    opacity: 1;
+    top: 5px;  /* amount to push down (+) */
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+
+.tooltip2 {
+    opacity:1;
+    display: inline-block;
+    padding: 4px 8px 5px 8px;
+    position:relative;
+    top: -23px;
+    left: -27px;
+    color: rgba(255,255,255,0.9);
+    font-size: 1.1rem;
+    line-height: 1em;
+    /*text-align: center;*/
+    background: #50585D;
+    border-radius:20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+.subscribe:hover .tooltip2 {
+    opacity: 1;
+    top: 5px;  /* amount to push down (+) */
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+
+/* Better styles for embedding GitHub Gists */
+
+
+.gist{font-size: 0.9em;line-height: 1.5em;margin-bottom:20px;width:98%; margin-left: auto; margin-right: auto !important}
+.gist-data{background-color: #f6f9ff !important}
+.gist pre{font-family:monospace,Menlo,Monaco,'Bitstream Vera Sans Mono','Courier New' !important; }
+.gist-meta{font-family:Helvetica,Arial,sans-serif;font-size:0.75em !important}
+.gist-meta a{text-decoration:none; border: none}
+.gist-meta a:hover{text-decoration:none; border: none}
+
+
+
+
