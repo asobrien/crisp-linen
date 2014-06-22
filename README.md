@@ -1,7 +1,32 @@
-crisp-linen
+Crisp-Linen
 ===========
 
 A clean, responsive theme for Ghost forked from Crisp.
+
+INSTALLATION
+------------
+This can be [installed like any theme in Ghost](https://www.digitalocean.com/community/tutorials/how-to-change-themes-and-adjust-settings-in-ghost). For now follow the instructions [here](https://github.com/kathyqian/crisp-ghost-theme#required-steps-for-installation) to get Crisp-Linen up and running. Note that the line numbers are likely to differ than what is specified in these instructions.
+
+A more complete set of instructions will follow (eventually).
+
+
+ISSUES, BUGS, ETC.
+------------------
+If you have any issues, spot any bugs, etc., etc., go ahead and make an entry on the [issue tracker](https://github.com/asobrien/crisp-linen/issues) and we'll get them squared away.
+
+
+CONTRIBUTE
+----------
+So, you want to contribute and make this thing betterer. Go ahead! 
+
+Here are the steps you should follow:
+
+1) Fork the [Crisp-Linen repository](https://github.com/asobrien/crisp-linen) (here are some [instructions on forking](https://help.github.com/articles/fork-a-repo)).
+2) Create a new [working branch](https://help.github.com/articles/fork-a-repo#create-branches) for your changes.
+3) Commit yer changes.
+4) Submit a pull request (here are some [instructions on pull requests](https://help.github.com/articles/using-pull-requests)).
+
+
 
 
 CREDITS
