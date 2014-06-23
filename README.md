@@ -1,7 +1,7 @@
 Crisp-Linen
 ===========
 
-A clean, responsive theme for Ghost forked from Crisp.
+A clean, responsive theme for the [Ghost blogging platform](https://ghost.org/about/) forked from [Crisp](https://github.com/kathyqian/crisp-ghost-theme).
 
 INSTALLATION
 ------------
